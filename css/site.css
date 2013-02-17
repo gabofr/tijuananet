@@ -1,0 +1,49 @@
+body {
+    font-family: 'Segoe UI', "wf_SegoeUI","Tahoma","Verdana","Arial","sans-serif";
+    margin-top: 0;
+}
+
+.page {
+    margin: auto;
+    max-width: 1200px;
+}
+
+.top-navigation{
+    font-size: .9em;
+    text-align: right;        
+    color: #6691B7;
+}
+
+.top-navigation a{
+    text-decoration: none;
+    color: #6691B7;
+}
+
+.top-navigation a:after{
+    content: " | ";
+}
+
+.top-navigation a:last-child:after{
+    content: "";
+}
+
+header{
+    clear: both;
+}
+
+.main-navigation{
+    padding: 1em 0;
+}
+
+.main-navigation a {
+    color: #1A1A1A;
+    margin: .7em;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+.carousel{
+    min-height: 400px;
+    border-top:  2px solid silver;
+    background-image: url(../images/surface.jpg);        
+    background-color: #F1F1F1;
+}
