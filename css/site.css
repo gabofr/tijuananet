@@ -1,0 +1,68 @@
+body {    
+    font-family: 'Segoe UI', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+    margin-top: 0;
+}
+
+.page {
+    margin: auto;
+    max-width: 1200px;
+}
+
+.top-navigation{
+    font-size: .9em;
+    text-align: right;        
+    color: #6691B7;
+}
+
+.top-navigation a{
+    text-decoration: none;
+    color: #6691B7;
+}
+
+.top-navigation a:after{
+    content: " | ";
+}
+
+.top-navigation a:last-child:after{
+    content: "";
+}
+
+header{
+    clear: both;
+}
+
+.main-navigation{
+    padding: 1em 0;
+}
+
+.main-navigation a {
+    color: #1A1A1A;
+    margin: .7em;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+.carousel{
+    min-height: 350px;
+    border-top:  2px solid silver;
+    background-image: url(../images/surface.jpg);        
+    background-color: #F1F1F1;
+}
+
+input[type=email]{    
+    border: 1px #bababa solid;
+    width: 400px;
+    padding: 1px 6px;
+    background-color: #fff;          
+    height: 32px;
+    min-height: 32px;
+}
+
+button{        
+    min-height: 36px;
+    font-weight: bold;
+    height: 36px;    
+    border: 1px transparent solid;            
+    cursor: pointer;
+    color: white;
+    background-color: #1570A6;
+}
