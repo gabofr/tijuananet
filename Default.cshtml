@@ -1,9 +1,4 @@
-﻿@{
-    
-}
-
-<!DOCTYPE html>
-
+﻿<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8" />
@@ -14,8 +9,7 @@
     <body>
         <div class="page">
             <header>
-                <nav class="top-navigation">
-                    <a href="#">Ingresar</a>
+                <nav class="top-navigation">                    
                     <a href="http://twitter.com/tijuananet">Siguenos en twitter</a>
                     <a href="https://www.facebook.com/groups/31167573201/">Grupo en Facebook</a>                    
                 </nav>            
@@ -23,12 +17,13 @@
             </header>
             <nav class="main-navigation">
                 <a href="#">Inicio</a>
-                <a href="#">Eventos</a>                
-                <a href="#">Galeria</a>                                
+                <a href="#">Eventos</a>
+                <a href="#">Boletines</a>                
                 <a href="#">Blogs</a>
                 <a href="http://dev3cast.com">Podcast</a>
             </nav>
             <section class="carousel" style="padding-left: 40px;padding-top: 20px;" id="carousel">
+                <a href="#">
                 <div style="background-color: #1570A6;color: white;width: 400px;height: 200px;padding: 10px;float: left" id="tile">                    
                     <h2>R53: De Silverlight a WinRT</h2>
                     <p>
@@ -38,7 +33,12 @@
                         Jueves 7 de febrero de 2013 <br>
                         Bit Center 6:30 a 8:30 <br>
                     </p>                    
-                </div>                
+                </div>      
+                </a>          
+            </section>
+            <section style="text-align:center;font-weight:bold;margin:20px;line-height:2em;">
+                ¿Quieres recibir información sobre las actividades de la comunidad en tu correo electrónico?<br>
+                <input type="email" placeholder="Correo Electrónico"> <button>Suscribirme al Boletín</button>
             </section>
         </div>
         <script type="text/template" id="slide-1">            
@@ -76,7 +76,7 @@
                 carousel.style["background-image"] = "url(images/" + images[currentIndex] + ")";
             }
 
-            setInterval(slide, 10000);
+            setInterval(slide, 7000);
 
         </script>
     </body>

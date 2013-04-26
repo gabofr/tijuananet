@@ -1,5 +1,5 @@
-body {
-    font-family: 'Segoe UI', "wf_SegoeUI","Tahoma","Verdana","Arial","sans-serif";
+body {    
+    font-family: 'Segoe UI', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
     margin-top: 0;
 }
 
@@ -42,8 +42,27 @@ header{
     text-decoration: none;
 }
 .carousel{
-    min-height: 400px;
+    min-height: 350px;
     border-top:  2px solid silver;
     background-image: url(../images/surface.jpg);        
     background-color: #F1F1F1;
+}
+
+input[type=email]{    
+    border: 1px #bababa solid;
+    width: 400px;
+    padding: 1px 6px;
+    background-color: #fff;          
+    height: 32px;
+    min-height: 32px;
+}
+
+button{        
+    min-height: 36px;
+    font-weight: bold;
+    height: 36px;    
+    border: 1px transparent solid;            
+    cursor: pointer;
+    color: white;
+    background-color: #1570A6;
 }
