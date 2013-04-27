@@ -1,0 +1,15 @@
+﻿@{
+    var db = Database.Open("tjnet");
+    var events = db.Query("SELECT * FROM events ORDER BY date");
+}
+
+
+<h1>Eventos</h1>
+
+@foreach(var item in events)
+{
+    <div>
+    <h2><a href="~/events/details/@item.id">@item.title</a></h2>
+        <p>@item.summary</p>
+    </div>
+}
