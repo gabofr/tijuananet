@@ -1,0 +1,16 @@
+﻿@{
+    if(IsPost)
+    {
+        var db = Database.Open("tjnet");
+        var confirmationCode = System.Guid.NewGuid().ToString();
+        var email = Request.Form["email"];
+        db.Execute("INSERT INTO Subscriptions(Email, ConfirmationCode) VALUES(@0, @1)", email, confirmationCode) ;
+    }
+    else
+    {
+        Response.Redirect("~/");          
+    }
+}
+
+
+Gracias por suscribirte.
