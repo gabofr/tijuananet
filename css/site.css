@@ -33,6 +33,7 @@ header{
 
 .main-navigation{
     padding: 1em 0;
+    border-bottom: solid 2px silver;
 }
 
 .main-navigation a {
