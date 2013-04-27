@@ -66,3 +66,19 @@ button{
     color: white;
     background-color: #1570A6;
 }
+
+.subscribe {
+    text-align:center;
+    font-weight:bold;
+    margin:20px;
+    line-height:2em;      
+}
+
+#tile {
+    background-color: #1570A6;
+    color: white;
+    width: 400px;
+    height: 200px;
+    padding: 10px;
+    float: left
+}
