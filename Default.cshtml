@@ -7,9 +7,10 @@
     <a href="#"><div id="tile"></div></a>          
 </section>
 
+
 <section class="subscribe">
     ¿Quieres recibir información sobre las actividades de la comunidad en tu correo electrónico?<br>
-    <input type="email" placeholder="Correo Electrónico"> <button>Suscribirme al Boletín</button>
+    <input type="email" placeholder="Correo Electrónico" id="email"> <button>Suscribirme al Boletín</button>
 </section>
 @{ var newsCounter = 0; }
 @foreach(var item in news)
@@ -41,3 +42,10 @@
     setInterval(slide, 7000);
 
 </script>    
+
+@section scripts { 
+    <script>
+
+    </script>
+}
+
