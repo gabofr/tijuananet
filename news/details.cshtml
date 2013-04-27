@@ -1,0 +1,12 @@
+﻿@{
+    var db = Database.Open("tjnet");
+    var news = db.QuerySingle("SELECT * FROM news WHERE id = @0", UrlData[0] );
+ }
+
+<h1>@news.title</h1>
+
+<img alt="@news.title" src="@news.imageUrl" />
+
+<p>@news.description</p>
+
+

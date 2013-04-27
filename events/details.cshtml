@@ -1,0 +1,11 @@
+﻿@{
+    var db = Database.Open("tjnet");
+    var item = db.QuerySingle("SELECT * FROM events WHERE id = @0", UrlData[0] );
+}
+
+
+<h1>@item.title</h1>
+
+<img alt="@item.title" src="@item.topImageUrl" />
+
+<p>@item.description</p>
