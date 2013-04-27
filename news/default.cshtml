@@ -1,3 +1,14 @@
 ﻿@{
-    
+    var db = Database.Open("tjnet");    
+    var news = db.Query("SELECT * FROM News ORDER BY id DESC");
+}
+
+<h1>Noticias</h1>
+@foreach(var item in news)
+{   <div>
+    <h2><a href="/details/@item.id" >@item.title</a></h2>
+    <p>
+        @item.summary
+    </p>
+    </div>
 }
