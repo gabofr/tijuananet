@@ -83,3 +83,20 @@ button{
     padding: 10px;
     float: left
 }
+
+.list-item{
+    border-bottom: 1px solid silver;
+    padding: 1em;
+    overflow: auto;
+}
+
+.list-item .icon{
+    float: left;
+    width: 225px;
+    height: 150px;
+}
+
+.list-item .info{
+    float: left;
+    margin-left: 1em;
+}
