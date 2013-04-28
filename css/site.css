@@ -92,8 +92,10 @@ button{
 
 .list-item .icon{
     float: left;
+    /*
     width: 225px;
     height: 150px;
+        */
 }
 
 .list-item .info{
