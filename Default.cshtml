@@ -10,7 +10,9 @@
 
 <section class="subscribe">
     ¿Quieres recibir información sobre las actividades de la comunidad en tu correo electrónico?<br>
-    <input type="email" placeholder="Correo Electrónico" id="email"> <button>Suscribirme al Boletín</button>
+    <form action="subscriptions/create" method="post">
+        <input type="email" placeholder="Correo Electrónico" id="email" name="email"> <button type="submit" id="subscribe">Suscribirme al Boletín</button>
+    </form>
 </section>
 @{ var newsCounter = 0; }
 @foreach(var item in news)
@@ -43,9 +45,18 @@
 
 </script>    
 
+<div id="message"></div>
+
 @section scripts { 
     <script>
-
+        /*
+        var subscribeButton = $("#subscribe");
+        subscribeButton.click(function () {
+            console.log('click');
+            $.post("subscriptions/create", { email: $("email").val() }, function (data) {
+                $("message").html(data);
+            });
+        });*/
     </script>
 }
 
