@@ -1,6 +1,6 @@
 ﻿@{
     var db = Database.Open("tjnet");
-    var news = db.Query("SELECT top 3 * FROM News ORDER BY id DESC");
+    var news = db.Query("SELECT top 4 * FROM News ORDER BY id DESC");
 }
 
 <section class="carousel" style="padding-left: 40px;padding-top: 20px;" id="carousel">
